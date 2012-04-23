@@ -19,5 +19,45 @@
               = link_to "Prueba", "#"
         %li
           = link_to "Menu2", "#"
-= yield
-
+        %li
+          = link_to "Events", "#"
+      %ul.nav.pull-right
+        %li.dropdown#menu3
+          %a.dropdown-toggle{:data => {:toggle => "dropdown"}, :href => "#menu3"}
+            Login
+            %b.caret
+          %ul.dropdown-menu#login
+#sub
+  .container
+    .row
+      .span3#logosmall
+        %h4 Prueba
+#subhome
+  .container
+    .row
+      .span3
+        %strong Prueba 1
+      .span3
+        %strong Prueba 2
+      .span3
+        %strong Prueba 3
+      .span3
+        %strong Prueba 4
+#content.home
+  .container
+    .row
+      .span9
+        .span6
+          %h3 Una prueba mas
+        .span3
+          %h3 Otra prueba mas
+      .span3
+        .well.sidenav
+          .rightcol
+            %h3 Panel 1
+        .well
+          .rightcol
+            %h3 Panel 2
+        .well
+          .rightcol
+            %h3 Panel 3
