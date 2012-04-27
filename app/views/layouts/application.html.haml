@@ -35,30 +35,22 @@
 #subhome
   .container
     .row
-      .span2
-        %strong Contacto
-        %br
-        = image_tag "phone.png"
-      .span2
-        %strong Aplicaciones
-        %br
-        = image_tag "engineer.png"
-      .span2
-        %strong Solicitud
-        %br
-        = image_tag "id_card.png"
-      .span2
-        %strong Atencion Cliente
-        %br
-        = image_tag "under_construction.png"
-      .span2
-        %strong Configuraciones
-        %br
-        = image_tag "settings.png"
-      .span2
-        %strong Issues
-        %br
-        = image_tag "warning_sign.png"
+      .span3
+        = link_to "#" do
+          %strong Contacto
+          %p Contacto con Empresa
+      .span3
+        = link_to "#" do
+          %strong Aplicaciones
+          %p Gestion de Aplicaciones
+      .span3
+        = link_to "#" do
+          %strong Solicitud
+          %p Solicita tu Aplicacion
+      .span3
+        = link_to "#" do
+          %strong Atencion Cliente
+          %p Peticiobnes de Clientes
 #content.home
   .container
     .row
